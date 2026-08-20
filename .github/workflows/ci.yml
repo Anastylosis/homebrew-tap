@@ -38,8 +38,17 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
 
+      # The Linux images ship Homebrew at /home/linuxbrew but do not put it on
+      # PATH; the macOS images do. Adding the directory rather than installing
+      # anything keeps this to one line and no third-party action.
+      - name: Put Homebrew on PATH
+        if: runner.os == 'Linux'
+        run: echo "/home/linuxbrew/.linuxbrew/bin" >> "$GITHUB_PATH"
+
       - name: Tap this checkout
-        run: brew tap anastylosis/tap "$GITHUB_WORKSPACE"
+        run: |
+          brew --version
+          brew tap anastylosis/tap "$GITHUB_WORKSPACE"
 
       - name: List formulae
         id: list
