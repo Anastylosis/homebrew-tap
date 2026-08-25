@@ -12,7 +12,6 @@
 class Fss < Formula
   desc "Scrapes all scenes and metadata from a studio URL"
   homepage "https://github.com/Anastylosis/FSS"
-  version "1.30.1"
   license "GPL-3.0-only"
 
   on_macos do
