@@ -11,6 +11,12 @@
 # cannot compute a checksum.
 class Fss < Formula
   desc "Scrapes all scenes and metadata from a studio URL"
+  # Explicit on purpose. Homebrew's URL scan reads fss-v1.30.1-darwin-arm64.tar.gz
+  # as version "64" on macOS (it takes the trailing number), so without this
+  # line `brew test` compares against 64. On Linux the amd64 URL scans
+  # correctly, which makes `brew audit` call the line redundant there — the
+  # tap's CI runs audit with --except=version for exactly this reason.
+  version "1.30.1"
   homepage "https://github.com/Anastylosis/FSS"
   license "GPL-3.0-only"
 
