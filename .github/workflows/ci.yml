@@ -74,7 +74,12 @@ jobs:
             # policy, much of which does not apply to a third-party tap, and a
             # red build everyone learns to ignore is worse than no build. What
             # is checked here is breakage a user would actually hit.
-            brew audit --online "anastylosis/tap/${f}"
+            # --except=version: our binary formulae declare `version` explicitly
+            # because Homebrew's URL scan reads "...-darwin-arm64.tar.gz" as 64 on
+            # macOS. On Linux the scan happens to be right, and audit_version then
+            # reports the line as "redundant". The explicit version is the correct
+            # one everywhere, so that single check is skipped; everything else runs.
+            brew audit --online --except=version "anastylosis/tap/${f}"
           done
 
       - name: Install and test
