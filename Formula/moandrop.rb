@@ -15,28 +15,28 @@ class Moandrop < Formula
   homepage "https://github.com/Anastylosis/MoanDrop"
   # Explicit on purpose: Homebrew's URL scan misreads the arch suffix as the
   # version on macOS (see the fss formula for the full story).
-  version "0.1.1"
+  version "0.1.2"
   license "GPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.1/moandrop-v0.1.1-darwin-arm64.tar.gz"
-      sha256 "e8f7d69135e53822233c74ccafffd9d0c7ad43fa7c89a3204281b136ed3f3242"
+      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.2/moandrop-v0.1.2-darwin-arm64.tar.gz"
+      sha256 "0dcebc60420e5f089046cfcc4b1d9ed6c14fcc67554886358985eb17def23398"
     end
     on_intel do
-      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.1/moandrop-v0.1.1-darwin-amd64.tar.gz"
-      sha256 "6f70a527577730e25f14c69c2c567201d6a0d5e6b07ae8d5ce17b572d5f1d833"
+      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.2/moandrop-v0.1.2-darwin-amd64.tar.gz"
+      sha256 "65968b86801f4036de3724f9958527b63ef29aee2be0eae30cd45b919918d06f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.1/moandrop-v0.1.1-linux-arm64.tar.gz"
-      sha256 "6cfcde401a0330355f36fb6cea591276d2ec5f58c17f1fdcfa28125ae1e3a1c1"
+      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.2/moandrop-v0.1.2-linux-arm64.tar.gz"
+      sha256 "00fac03cb8d8321cd5a8f8c38914ef39916906982006cd12eee4c2c43f52af20"
     end
     on_intel do
-      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.1/moandrop-v0.1.1-linux-amd64.tar.gz"
-      sha256 "59d49a9a7455bb798a0b7cae65b65383027ebb9fe47addf5584cebc48dc632b0"
+      url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.1.2/moandrop-v0.1.2-linux-amd64.tar.gz"
+      sha256 "38f425693fc734247950946e5e0cb87bf71785aafdf1077fcb2b7ef6fdcf77b8"
     end
   end
 
