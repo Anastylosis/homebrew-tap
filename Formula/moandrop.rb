@@ -21,22 +21,22 @@ class Moandrop < Formula
   on_macos do
     on_arm do
       url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.2.0/moandrop-v0.2.0-darwin-arm64.tar.gz"
-      sha256 "554c7e5f0dd0a14ff0b59a742892e956d0e7efc545cc2ce5179332ed4155205e"
+      sha256 "e918d54b8f55f6b2817eb7773ff4a1f124a79c5977f7954fa675cd6efe8af9c9"
     end
     on_intel do
       url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.2.0/moandrop-v0.2.0-darwin-amd64.tar.gz"
-      sha256 "d57c88507fe6ea30831653221c4e329bf108f381f6b93d49817667fbbd245ebd"
+      sha256 "0b3e21c788397e4ca346a9ae6b1c56f3f16cd0efaffda697d751fc17ff8a892b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.2.0/moandrop-v0.2.0-linux-arm64.tar.gz"
-      sha256 "48bb3d7173a7c4dc01ad83670a20bbeb9f96af7e14361981de715e2ecf57ae60"
+      sha256 "1c056ac444f6f62b02c2a5110da4f0afb92e7017628b5e83625840b4bacd32ed"
     end
     on_intel do
       url "https://github.com/Anastylosis/MoanDrop/releases/download/v0.2.0/moandrop-v0.2.0-linux-amd64.tar.gz"
-      sha256 "8074f82312ffe72173e998932954fe05bba0e2f0988d93f75fbbbe7ebb8daace"
+      sha256 "552fe7429e708aca0129fe3bbbf133e1de7d17029fdb886d9735a884049cbb40"
     end
   end
 
