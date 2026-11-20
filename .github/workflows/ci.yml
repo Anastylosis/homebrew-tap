@@ -49,6 +49,8 @@ jobs:
         run: |
           brew --version
           brew tap anastylosis/tap "$GITHUB_WORKSPACE"
+          # Homebrew refuses to load formulae from a tap it does not trust.
+          brew trust anastylosis/tap
 
       - name: List formulae
         id: list
